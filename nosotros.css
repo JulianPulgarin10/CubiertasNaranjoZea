@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: #000109;
+    color: white;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+nav{
+    display: flex;
+    padding: 3% 6%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+.list{
+    flex: 1;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+.list ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.list ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.list ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background:#f96a04;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.list ul li:hover {
+    transform: translateY(-5px); /* Mueve hacia arriba 5px, ajusta según necesites */
+}
+
+.list ul li:hover::after{
+    width: 100%;
+}
+
+.logo{
+    font-size: 2.5em;
+}
+
+.logo span{
+    color: #f96a04;
+    font-weight: 700;
+}
+
+.color span{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--clr);
+    border-radius: 50%;
+    top:50px;
+    right: 39%;
+    
+}
+
+.tex{
+    padding: 80px 80px ;
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text p{
+    max-width: 50%;
+    padding: 10px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+}
+
+.text span {
+    color: #f96a04;
+}
+
+.text a {
+    display: inline-block;
+    background: blue;
+    color: #e2d7d7;
+    padding: 15px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.text a:hover {
+    transform: translate(20px, -10px); /* Mueve el botón hacia la derecha y hacia abajo al pasar el mouse */
+}
+
+
+.pregunta{
+    color: #f96a04;
+}
+
+
+
+
+/*Galeria*/
+
+/* Contenedor de la galería */
+.gallery-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Contenedor de las imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite el ajuste en varias líneas */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilo de las imágenes de la galería */
+.gallery-image {
+    flex: 1 1 calc(33.333% - 10px); /* Tres imágenes por fila, menos el espacio entre ellas */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsión */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada en hover */
+}
+
+/* Estilo del título */
+.gallery h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+
+
+
+
+
+
+
+
+
+.float-wa{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+
+/* Ajustes específicos para dispositivos móviles */
+@media screen and (max-width: 468px) {
+.float-wa {
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+}
+}
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+
+
+ /* Estilos para dispositivos móviles */
+ @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .color span{
+        margin-left: 220px;
+    margin-top: -45px;
+    right: 10px;
+    }
+
+    .list ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list ul li {
+        margin: 10px 0;
+    }
+
+    .text h1 {
+        font-size: 1.5em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+
+    /* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .gallery-image {
+        flex: 1 1 calc(50% - 10px); /* Dos imágenes por fila en pantallas más pequeñas */
+        height: 150px; /* Ajuste de altura en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-image {
+        flex: 1 1 100%; /* Una imagen por fila en pantallas muy pequeñas */
+        height: 120px; /* Ajuste de altura en pantallas muy pequeñas */
+    }
+}
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.2em;
+    }
+
+    .text p {
+        font-size: 0.9em;
+    }
+
+    .text a {
+        padding: 8px 16px;
+    }
+
+    .float-wa {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .float-wa i {
+        margin-top: 12px;
+    }
+
+    @keyframes show {
+        from{
+          opacity: 0;
+          scale: 25%;
+        }
+        to{
+          opacity: 1;
+          scale: 100%;
+        }
+      }
+      
+      img{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+      
+        animation-timeline: --image;
+        animation-name: show;
+
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
+      }
+}
+
+
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #1da1f2; /* Cambia el color al pasar el cursor (ejemplo: azul claro) */
+}
+
+p {
+    margin: 0;
+    font-size: 0.9em;
+}

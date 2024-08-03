@@ -1,0 +1,677 @@
+@media(max-width:991px) {
+  body, head {
+    text-align: center;
+    align-items: center;
+    font-size: clamp(12px, 4vw, 32px);
+  }
+
+
+  .footer-row{
+      text-align: center;
+      align-items: center;
+  }
+
+  .footer-links{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:  none;
+    
+}
+
+
+.titulo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center; 
+}
+
+.titulo span{
+  color: #f96a04;
+}
+
+
+/* Fondo negro para el cuerpo de la página */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondos/fondo.texto.jpeg);
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    background-attachment: fixed;
+    
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+
+/* estilos para el logo */
+.logo{
+  font-size: 2.5em;
+  margin-left: 20%;
+}
+
+.logo span{
+  color: #f96a04;
+  font-weight: 700;
+}
+
+.color span{
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  background: var(--clr);
+  border-radius: 50%;
+  top:30px;
+  margin-top: 28px;
+ margin-left: -34%;
+}
+
+
+h3{
+  text-align: center;
+  background-color: #f96a04;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: orange;
+    margin-right: 1100px;
+
+    
+}
+
+header nav {
+    margin:  0;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: -800px;
+}
+
+
+header nav ul a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 20px;
+}
+
+header nav ul a:hover {
+    color: #f39c12; /* Color de enlace al pasar el cursor */
+    transform: translateY(-5px);
+}
+
+
+section{
+  display: flex;
+  align-items: center;
+  background-color: rgb(65, 125, 216);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para las secciones y artículos */
+section, article, aside, footer {
+    padding: 20px;
+}
+
+section h3, .eligenos h3 {
+    font-size: 1.8em;
+    color: #141413; /* Color distintivo para los títulos */
+    text-align: center;
+}
+
+
+.texto-eligenos {
+  margin-right: 200px; /* Margen derecho para pantallas grandes */
+}
+
+@media (max-width: 991px) {
+  .texto-eligenos {
+      margin: 0 auto; /* Centrar el texto */
+      max-width: 90%; /* Ajusta el ancho máximo para que ocupe más espacio disponible en móviles */
+      padding: 0 20px; /* Ajusta el espaciado interno para móviles */
+      text-align: center; /* Justifica el texto al centro */
+      margin-right: 0; /* Elimina el margen derecho excesivo en móviles */
+      margin-left: 0; /* Elimina el margen izquierdo para mantener el centrado */
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-eligenos {
+      padding: 0 10px; /* Reduce el espaciado interno en pantallas más pequeñas */
+      max-width: 100%; /* Ajusta el ancho máximo para ocupar el ancho completo del dispositivo */
+      margin: 0 auto; /* Asegura que el texto esté centrado */
+  }
+}
+
+
+
+
+section p, .eligenos p {
+    
+    line-height: 1.6;
+    font-size: 22px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Margen inferior para separación */
+    text-align: center;
+    margin-left: 120px;
+
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+
+
+
+
+/*Galeria*/
+
+/* Contenedor de la galería */
+.gallery-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Color de fondo suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Contenedor de las imágenes */
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Permite el ajuste en varias líneas */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilo de las imágenes de la galería */
+.gallery-image {
+  flex: 1 1 calc(33.333% - 10px); /* Tres imágenes por fila, menos el espacio entre ellas */
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsión */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Efecto de zoom en hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada en hover */
+}
+
+
+/* Estilo del título */
+.gallery h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Color del texto */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+
+/* El Modal (fondo) */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Mantener en su lugar */
+  z-index: 1; /* Encima de todo */
+  padding-top: 100px; /* Ubicación del cuadro */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  overflow: auto; /* Habilitar scroll si es necesario */
+  background-color: rgb(0,0,0); /* Color de fondo */
+  background-color: rgba(0,0,0,0.9); /* Negro con opacidad */
+}
+
+/* Contenido del Modal (imagen) */
+.modal-contenido {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Texto del Modal (texto de la imagen) - Mismo ancho que la imagen */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Agregar animación - Zoom en el Modal */
+.modal-contenido, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* El botón de cerrar */
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/*SEGUNDA GALERIA*/
+
+.galeriaDos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 2200px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.galeriaDos::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px dashed #ddd;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.galeriaDos img {
+  width: 220px; /* Tamaño de imagen ajustado para el diseño circular */
+  height: 220px; /* Asegura que las imágenes sean redondas */
+  border-radius: 50%; /* Bordes redondeados para un efecto circular */
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.galeriaDos img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .galeriaDos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeriaDos img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+
+
+
+
+
+
+    
+
+  
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer{
+    background-color: #000000;
+    padding: 80px 0;
+
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+  }
+
+  .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+  }
+ 
+  .footer-links{
+    width: 25%;
+    padding: 0 15px;
+
+    
+  }
+
+  .footer-links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+
+  .footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;    
+  }
+
+  .footer-links ul li a:hover{
+    color: #f39c12;
+    padding-left: 7px;
+  }
+
+
+  .social-link a {
+    display: inline-block;
+    width: 40px; /* Establece el ancho y la altura igual para crear un círculo */
+    height: 40px;
+    background-color: gray;
+    margin: 0 20px 10px 0;
+    text-align: center;
+    line-height: 40px; /* Centra el texto verticalmente */
+    border-radius: 50%; /* Hace que el borde sea redondo */
+    color: azure;
+    transition: all 0.5s ease; /* Ajusta la duración de la transición a 0.5s */
+}
+
+
+  .horarios{
+    color: blue;
+  }
+
+  .visita{
+    color: blue;
+  }
+
+
+    .social-link a:hover{
+        background-color: blue;
+    }
+
+    @media(max-width:991px) {
+        .footer-row{
+            text-align: center;
+            align-items: center;
+        }
+
+        .footer-links{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+
+
+    .final{
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+    display: block; /* Asegura que el párrafo se comporte como un bloque */
+    font-size: 1.1em; /* Ajusta el tamaño de la fuente (opcional) */
+    font-weight: bold; /* Hace el texto en negrita (opcional) */
+    }
+
+
+
+    .float-wa{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color:#25d366;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      font-size:30px;
+      z-index:100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+      animation: pulse 2s infinite;
+  }
+
+
+/* Ajustes específicos para dispositivos móviles */
+@media screen and (max-width: 468px) {
+  .float-wa {
+    width: 50px;
+    height: 50px;
+    bottom: 20px; /* Margen desde la parte inferior */
+    left: 20px; /* Margen desde el lado izquierdo */
+    position: fixed; /* Fija el ícono en su lugar en la pantalla */
+    font-size: 25px;
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+    animation: pulse 1.5s infinite; /* Agrega la animación de pulso si es necesario */
+  }
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+ 
+
+
+
+
+@media (max-width: 991px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+      font-size: clamp(12px, 4vw, 32px);
+  }
+
+  .color span{
+    margin-left: 150px;
+margin-top: 55px;
+}
+
+header{
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área del elemento */
+  background-position: center; /* Centra la imagen en el elemento */
+
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0 auto; /* Asegura que el párrafo esté centrado en su contenedor */
+  display: block; /* Asegura que el párrafo se comporte como un bloque */
+  font-size: 1.3em; /* Ajusta el tamaño de la fuente (opcional) */
+  font-weight: bold; /* Hace el texto en negrita (opcional) */
+}
+
+  header .logo img {
+      margin-left: 0; /* Ajusta el margen izquierdo del logo para centrarlo */
+  }
+
+  header h1 {
+      font-size: 1.3em;
+      margin-right: 0; /* Ajusta el margen derecho del título */
+  }
+
+  
+
+  header nav ul {
+      flex-direction: column;
+      margin-left: 0; /* Ajusta el margen izquierdo del menú */
+
+   
+  }
+
+  /* Ajustes para la sección */
+  section {
+      flex-direction: column;
+  }
+
+  section p {
+      margin-left: 0; /* Ajusta el margen izquierdo del párrafo */
+  }
+
+  /* Ajustes para el footer */
+  .footer-links {
+      width: 100%; /* Ancho completo para los enlaces del footer */
+  }
+
+  @keyframes show {
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  
+  img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+  
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }
+
+
+  
+}
+
+
+
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 80px; /* Ajusta este valor según la altura de tu footer y el espaciado deseado */
+  left: 50%; /* Centra el botón horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para centrarlo correctamente */
+  background-color: #2065fa;
+  color: #fff;
+  border-radius: 50%; /* Hacer el botón circular */
+  width: 50px; /* Tamaño del botón */
+  height: 50px; /* Tamaño del botón */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  font-size: 24px; /* Tamaño de la flecha */
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  border: 2px solid #181616;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+  transform: translateX(-50%) scale(1.1); /* Agranda ligeramente el botón al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
+
